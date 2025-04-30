@@ -50,8 +50,8 @@ namespace JuliaSet
             Texture texture = new Texture(image);
             Sprite sprite = new Sprite(texture);
 
-            Font font = new Font("arial.ttf");
-            Text text = new Text("", font);
+            //Font font = new Font("arial.ttf");
+            //Text text = new Text("", font);
 
             Stopwatch stopwatch = new Stopwatch();
 
@@ -69,8 +69,8 @@ namespace JuliaSet
                 window.Draw(sprite);
 
                 double fps = 1.0 / stopwatch.Elapsed.TotalSeconds;
-                text.DisplayedString = $"FPS: {fps:0.00}";
-                window.Draw(text);
+                //text.DisplayedString = $"FPS: {fps:0.00}";
+               //window.Draw(text);
                 window.Display();
             }
         }
